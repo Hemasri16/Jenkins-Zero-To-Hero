@@ -10,7 +10,7 @@ pipeline {
         
         stage('Checkout'){
            steps {
-                'credentialsId: GIT_CREDENTIALS_ID', 
+                git credentialsId: '9c69ae97-6194-4a96-9641-d0a3e7d6c851',
                 url: 'https://github.com/Hemasri16/Jenkins-Zero-To-Hero.git',
                 branch: 'main'
            }
